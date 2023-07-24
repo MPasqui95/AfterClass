@@ -40,20 +40,20 @@
 
 @media (min-width: 1044px){
     /* GRILLA */
-
-.main-container{
-    display: grid;
-    grid-template-columns: 1fr .5fr;
-    grid-template-areas: 
-    "main aside"
-    ;
+    
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        grid-template-areas: 
+        "main aside"
+        ;
 }
     main{
         grid-area: main;
     }
 
     aside{
-        display: block;
+        display: block!important;
         grid-area: aside;
     }
 

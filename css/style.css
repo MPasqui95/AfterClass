@@ -95,7 +95,7 @@
   main {
     grid-area: main; }
   aside {
-    display: block;
+    display: block !important;
     grid-area: aside; } }
 
 /* ---- Article ---- */
