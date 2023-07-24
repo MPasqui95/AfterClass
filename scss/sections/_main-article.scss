@@ -1,0 +1,22 @@
+/* ---- Article ---- */
+
+.main article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main article img{
+    width: 400px;
+    margin: auto;
+    margin: 15px 0;
+
+}
+
+.main article p {
+    width: 400px;
+    margin: auto;
+}
+
+aside{
+    display:none
+}

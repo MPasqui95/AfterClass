@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.fb {
+  background-color: blue; }
+
+.twt {
+  background-color: lightblue; }
+
+.wpp {
+  background-color: green; }
+
+.mail {
+  background-color: red; }
+
+.print {
+  background-color: gray; }
+
+/* ESTRATEGIA MOBILE FIRST */
+/* ---- HEADER ---- */
+.header {
+  box-shadow: 0px 5px 5px #cecaca;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.header img {
+  width: 150px;
+  padding: 8px; }
+
+/* A la lista, sacarle las viñetas, poner todo en mayusculas y color rojo */
+.header ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.header li {
+  padding: 5px; }
+
+.header a {
+  color: #a61717;
+  text-decoration: none; }
+
+@media (min-width: 769px) {
+  .header {
+    align-items: flex-start; }
+  .header img {
+    padding: 0 50px;
+    width: 250px; }
+  .header ul {
+    padding: 0 50px; } }
+
+/* ---- MAIN ---- */
+.main .tag {
+  background-color: #a61717;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 4px 10px; }
+
+.main .main-top {
+  margin: 30px 20px; }
+
+.main-top h1 {
+  margin: 12px 0; }
+
+.main ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end; }
+
+.main li {
+  padding: 10px;
+  margin: 0 5px;
+  color: white; }
+
+@media (min-width: 769px) {
+  .main article img {
+    width: 600px; }
+  .main article p {
+    width: 600px; } }
+
+@media (min-width: 1044px) {
+  /* GRILLA */
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-template-areas: "main aside"; }
+  main {
+    grid-area: main; }
+  aside {
+    display: block;
+    grid-area: aside; } }
+
+/* ---- Article ---- */
+.main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main article img {
+  width: 400px;
+  margin: auto;
+  margin: 15px 0; }
+
+.main article p {
+  width: 400px;
+  margin: auto; }
+
+aside {
+  display: none; }
+
+/* ---- Footer ---- */
+.footer {
+  background-color: black;
+  color: white; }
+
+.footer ul {
+  list-style-type: none; }
+
+.footer p {
+  text-align: center; }
